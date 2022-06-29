@@ -1,6 +1,3 @@
-from tkinter import N
-
-
 l = 1
 h = 10000
 
