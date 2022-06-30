@@ -13,6 +13,7 @@ low = 1
 # high bound
 high = 1000
 
+guesses = 0
 
 while True:
     print(f"Guessing from {low} to {high}")
@@ -26,5 +27,7 @@ while True:
         # should be lower than the upper bound - and the midpoint/guess
         high = guess - 1
     elif ex == 'c':
-        print("Yes! I found it!")
+        print(f"Yes! I found it! in {guesses} guesses")
         break         
+
+    guesses += 1
