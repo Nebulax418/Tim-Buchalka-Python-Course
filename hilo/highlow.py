@@ -15,7 +15,7 @@ high = 1000
 
 guesses = 0
 
-while True:
+while low != high:
     print(f"Guessing from {low} to {high}")
     guess = low + ((high - low) // 2)    
     ex = input(f"My guess is {guess} - enter h for higher, l for lower, or c for correct: ").casefold()
@@ -31,3 +31,8 @@ while True:
         break         
 
     guesses += 1
+
+# we know that if low is equal to high that would mean we guessed the number
+else:
+    print(f"You thought of the number {low} - and I got it in {guesses} guesses")
+    

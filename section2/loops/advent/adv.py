@@ -1,4 +1,3 @@
-
 available_exits = ["north", "south", "east", "west"]
 
 # initializes the variable to an empty string
@@ -11,7 +10,8 @@ while chosen_exit not in available_exits:
     if chosen_exit.casefold() == "quit":
         print("Goodbye!")
         break
-        
 
-# if the chosen exit is out of it then print this
-print("Sheesh, you got out of it!")
+# only executed if the loop terminates normally - not if it breaks out of the loop   
+else:
+    # if the chosen exit is out of it then print this
+    print("Sheesh, you got out of it!")
