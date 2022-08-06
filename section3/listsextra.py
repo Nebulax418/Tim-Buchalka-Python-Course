@@ -18,3 +18,10 @@ print(available_parts[3:])
 # strange things
 available_parts[3:] = "trackball"
 print(available_parts)
+
+# adding a new element correctly this time 
+# elements 3 and onwards were replaced with trackball
+available_parts[3:] = ["trackball"]
+print(available_parts)
+
+
